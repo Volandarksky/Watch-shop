@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'landing',
+    'products',
+    'orders',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -107,4 +109,4 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media") 
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
