@@ -1,4 +1,27 @@
-.topText{
+html, body{
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.top-container{
+    padding-top: 12%;
+}
+.general-container{
+    background: url('../img/img.jpg');
+    height: 100%;
+}
+.general-container form label{
+    font-weight: 200;
+    color: white;
+}
+.title{
+    color: rgb(255, 255, 255);
     text-align: center;
-    color: rgb(35, 255, 120)
+    font-weight: 100;
+    line-height: 50px;
+}
+.product-item{
+    height: 200px;
+    background: grey;
+    position: relative;
 }

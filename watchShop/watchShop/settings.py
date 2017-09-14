@@ -104,3 +104,7 @@ STATICFILES_DIRS = (
   ('static', '/home/kk/learning/test_project/zback/forGit/watchShop/static'),
   "static"
 )
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media") 
