@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link rel="stylesheet" type="text/css" href="{% static "css/landingStyle.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "static/landing.css" %}">
 
 </head>
 <body>
@@ -25,16 +25,17 @@
                     <h2 class="title">Оставляйте ваш e-mail в форме ниже</h2>
                     <br>
                     <div>
-                        <form action="" method="post" class="form-inline text-center">{% csrf_token %}
-                         <div class="form-group">
-                             <label>Ваш имейл: </label>
-                             <input name="{{ form.email.name }}" class="form-control">
-                         </div>
-                         <div class="form-group">
-                             <label>Ваше имя: </label>
-                             <input name="{{ form.name.name }}" class="form-control">
-                         </div>
-                         <button type="submit" class="btn btn-primary btn-orange">Отправить</button>
+                        <form action="" method="post" class="form form-inline text-center">{% csrf_token %}
+                            <hr>
+                            <div class="form-group">
+                                <label>Ваше имя: </label>
+                                <input type="text" name="{{ form.name.name }}" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Ваш e-mail: </label>
+                                <input type="text" name="{{ form.email.email }}" class="form-control">
+                            </div>
+                                <button type="submit" class="btn btn-primary" name="button">Send</button>
                         </form>
                     </div>
                 </div>
@@ -47,6 +48,7 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

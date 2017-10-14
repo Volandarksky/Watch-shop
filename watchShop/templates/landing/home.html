@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="image-top">
+    </div>
+    <h1 class="top-text">CLOCK</h1>
+    <div class="section selection1">
+        <div class="container">
+            <div class="row">
+                <br>
+                <h2 class="text">Новые поступления</h2>
+                <hr>
+                {% for product_image in products_images %}
+                    {% include "landing/product_item.html" %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <div class="section selection2 smart-container">
+        <div class="container">
+            <div class="row">
+                <br>
+                <h2 class="text">Умные часы</h2>
+                <hr>
+                {% for product_image in products_images_smart %}
+                    {% include "landing/product_item.html" %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="section selection3 fitness-container">
+        <div class="container">
+            <div class="row">
+                <br>
+                <h2 class="text">Фитнес-браслеты</h2>
+                <hr>
+                {% for product_image in products_images_fitness %}
+                    {% include "landing/product_item.html" %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

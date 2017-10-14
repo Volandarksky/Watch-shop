@@ -7,7 +7,7 @@ html, body{
     padding-top: 12%;
 }
 .general-container{
-    background: url('../img/img.jpg');
+    background: url('img/img.jpg');
     height: 100%;
 }
 .general-container form label{
