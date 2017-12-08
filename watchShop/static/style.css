@@ -15,6 +15,7 @@ html, body{
 
 .text{
     text-align: center;
+    font-weight: lighter;
 }
 
 .product-item{
@@ -35,16 +36,23 @@ html, body{
 
 .image-top{
     background-image: url('img/img.jpg');
-    height: 750px;
+    height: 630px;
     overflow: hidden;
-    margin-top: -180px;
+    margin-top: -320px;
+    margin-left: -100px;
+}
+
+.image-top-without-bascet{
+    background-image: url('img/img.jpg');
+    height: 630px;
+    margin-top: -320px;
     margin-left: -100px;
 }
 
 .top-text{
     font-family: sans-serif;
     position: absolute;
-    top: 190px;
+    top: 55px;
     text-align: center;
     width: 100%;
     color: white;
@@ -55,7 +63,7 @@ html, body{
 .discaunt-container{
     position: absolute;
     top: 30%;
-    background-color: rgb(111, 244, 65);
+    background: linear-gradient(to top, #ffffff, #008c25);
     width: 30%;
     color: white;
     font-weight: 800;
@@ -63,8 +71,28 @@ html, body{
     padding: 10px 0 10px 0;
 }
 
+.product-name{
+    font-weight: 300;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-description{
+    font-weight: 300;
+}
+
+.product-price{
+    font-weight: 300;
+}
+
 .product-description-tabs{
     padding: 10px;
+}
+
+.product-img{
+    min-height: 160px;
+    max-height: 160px;
 }
 
 .product-image-item{
@@ -99,4 +127,23 @@ html, body{
     background-color: #cfefd0;
     z-index: 10;
     padding: 10px;
+}
+
+.product-page-name{
+    font-weight: lighter;
+}
+
+.product-page-description{
+    font-weight: 300;
+}
+
+.product-page-price{
+    font-weight: 300;
+    font-size: large;
+}
+
+.product-page-image{
+    margin-left: 150px;
+    margin-top: 50px;
+    max-height: 300px;
 }

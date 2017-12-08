@@ -2,7 +2,7 @@
     <div class="product-item">
         <div>
             <a href="{% url 'product' product_image.product.id %}">
-                <img src="{{ product_image.image.url }}" width="60%" height="60%" max-height="100px" class="img-resposive">
+                <img src="{{ product_image.image.url }}" width="60%" height="60%" max-height="100px" class="img-resposive product-img">
             </a>
         </div>
         {% if product_image.product.discount %}
@@ -10,12 +10,12 @@
             <span>-{{ product_image.product.discount }}%</span>
         </div>
         {% endif %}
-        <h4>{{ product_image.product.name }}</h4>
-        <p>{{ product_image.product.description|truncatechars_html:60 }}</p>
-        <div>
-            {{ product_image.product.price }} RUB
-        </div>
+        <a href="{% url 'product' product_image.product.id %}">
+            <h4 class="product-name">{{ product_image.product.name }}</h4>
+        </a>
+        <p class="product-description">{{ product_image.product.description|truncatechars_html:60 }}</p>
         <div class="add-to-cart-btn">
+            <p class="product-price">{{ product_image.product.price }} RUB</p>
             <button class="btn btn-success">Добавить в корзину</button>
         </div>
     </div>
